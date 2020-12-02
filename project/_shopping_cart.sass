@@ -1,0 +1,252 @@
+.product-details
+    width: 100%
+    margin-top: 90px
+    border-collapse: collapse
+
+.img-table
+    width: 100px
+    height: 115px
+    
+.tr-table-prod
+    border-bottom: 1px solid #eaeaea
+    .td-table-prod:first-of-type
+        display: flex
+        align-items: center
+        text-align: left
+    .td-table-prod
+        text-align: center
+        padding: 25px 0
+    .td-table-prod:last-of-type
+        color: #c0c0c0
+        font-size: 16px
+        font-weight: 400
+    
+.th-table-prod:first-of-type
+    text-align: left
+    
+.th-table-prod:first-of-type
+    text-align: left
+    
+.th-table-prod
+    color: #222
+    font-family: $font-site
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: -0.2px
+    text-align: center
+    padding-bottom: 20px
+    border-bottom: 1px solid #eaeaea
+    
+.name-prod-cart
+    display: block
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    transition: color .5s
+    text-decoration: none
+
+.name-prod-cart:hover
+    color: $pink
+    transition: color .5s
+
+.color-prod-cart 
+    color: #575757
+    font-size: 13px
+    font-weight: 400
+    margin-top: 15px
+
+.size-prod-cart 
+    @extend .color-prod-cart
+    margin-top: 9px
+
+
+
+.name-color 
+    margin-left: 9px
+    color: #6f6e6e
+    font-size: 13px
+    font-weight: 300
+
+
+.name-size 
+    @extend .name-color
+
+.wrap-text-cart
+    margin-left: 20px
+    
+.unite-price
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    
+.quantity-cart
+    @extend .unite-price
+    box-sizing: border-box
+    width: 54px
+    height: 30px
+    border: 1px solid #eaeaea
+    text-align: center
+    
+.shipping
+    @extend .unite-price
+    text-transform: uppercase
+    
+.subtotal
+    @extend .unite-price
+    
+.flex-clear-continue
+    display: flex
+    justify-content: space-between
+    margin-top: 44px
+    
+.clear-shopping-cart
+    box-sizing: border-box
+    border: 1px solid #eaeaea
+    height: 50px
+    line-height: 50px
+    color: #4a4a4a
+    font-family: $font-site
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 0 38px
+    text-decoration: none
+    transition: all .2s
+    
+.continue-shopping
+    @extend .clear-shopping-cart
+    
+.clear-shopping-cart:hover
+    border: 1px solid #4a4a4a
+    transform: scale(1.05)
+    transition: all .2s
+    
+.continue-shopping:hover
+    @extend .clear-shopping-cart:hover
+    
+.flex-form-buy
+    display: flex
+    justify-content: space-between
+    margin-top: 63px
+    margin-bottom: 79px
+    
+.h3-item-form
+    color: #222
+    font-family: $font-site
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 22px
+    
+.select-city
+    box-sizing: border-box
+    width: 355px
+    height: 45px
+    border: 1px solid #eaeaea
+    margin-bottom: 20px
+    color: #b1b1b1
+    font-family: $font-site
+    font-size: 13px
+    font-weight: 300
+    padding: 0 17px
+    
+.state
+    @extend .select-city
+    
+.postcode
+    @extend .select-city
+    
+.get-a-quote
+    box-sizing: border-box
+    display: inline-block
+    border: 1px solid #eaeaea
+    height: 35px
+    line-height: 35px
+    color: #4a4a4a
+    font-family: $font-site
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 0 15px
+    text-decoration: none
+    
+.apply-coupon
+    @extend .get-a-quote
+    
+.p-coupon
+    color: #000
+    font-family: $font-site
+    font-size: 14px
+    font-weight: 300
+    margin-bottom: 24px
+    margin-top: 3px
+    
+.item-form:last-of-type
+    box-sizing: border-box
+    width: 360px
+    background-color: #f5f3f3
+    padding: 40px 44px
+    
+.item-form:nth-of-type(1)
+    width: 355px
+    
+.item-form:nth-of-type(2)
+    @extend .item-form:nth-of-type(1)
+    
+.sub-total-text
+    margin-right: 20px
+    
+.grand-total-text
+    @extend .sub-total-text
+    
+.sub-total
+    color: #4a4a4a
+    font-family: $font-site
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
+    
+.p-grand-total
+    color: #222
+    font-family: $font-site
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: right
+    margin-top: 14px
+    .grand-total-price
+        color: $pink
+        
+.grand-total
+    padding-bottom: 22px
+    border-bottom: 1px solid #e2e2e2
+    
+.proceed-to-checkout
+    box-sizing: border-box
+    display: block
+    height: 50px
+    line-height: 50px
+    background-color: $pink
+    color: #ffffff
+    font-family: $font-site
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 17px
+    text-decoration: none
+    text-align: center
+    transition: background-color .5s
+    
+.proceed-to-checkout:hover
+    background-color: #ec95a1
+    transition: background-color .5s
+    
+.get-a-quote:hover
+    @extend .clear-shopping-cart:hover
+    
+.apply-coupon
+    @extend .clear-shopping-cart:hover

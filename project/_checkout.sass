@@ -1,0 +1,139 @@
+.wrap-checkout
+  padding: 59px 0
+
+.section-checkout
+  border-bottom: 1px solid #e8e8e8
+
+.content
+  display: flex
+  padding-left: 35px
+  padding-top: 39px
+  padding-bottom: 79px
+  &__item:last-of-type
+    width: 390px
+    margin-left: 290px
+  &__item
+    &__h3
+      color: #222
+      font-family: $font-site
+      font-size: 13px
+      font-weight: 600
+      text-transform: uppercase
+      margin-bottom: 15px
+    &__p
+      color: #b3b2b2
+      font-family: $font-site
+      font-size: 13px
+      font-weight: 400
+      line-height: 20px
+      margin-bottom: 31px
+      &_bottom
+        @extend .content__item__p
+        margin-bottom: 15px
+      &_bottom:last-of-type
+        margin-bottom: 0
+    &__label
+      position: relative
+      display: inline-block
+      width: 235px
+      height: 16px
+      &__input-radio
+        opacity: 0
+        position: absolute
+        z-index: -1
+      &__text-radio
+        display: inline-block
+        cursor: pointer
+        @extend .content__item__h3
+        &__text-span
+          padding-left: 28px
+      &__text-radio::before
+        content: ''
+        box-sizing: border-box
+        position: absolute
+        width: 14px
+        height: 14px
+        border: 2px solid #555
+        border-radius: 7px
+      &__text-radio::after
+        content: ''
+        box-sizing: border-box
+        position: absolute
+        top: 7px
+        left: 4px
+        width: 6px
+        height: 6px
+        background-color: transparent
+        border-radius: 3px
+      &__input-radio:checked + .content__item__label__text-radio::after
+        background-color: #000
+
+.content__item__label:last-of-type
+  margin-top: 16px
+  margin-bottom: 32px
+
+.summary-checkout::-webkit-details-marker
+  display: none
+
+.summary-checkout
+  color: #222
+  padding: 30px 0
+  cursor: pointer
+  font-family: $font-site
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.red
+  color: #ff0d0d
+
+.required
+  font-family: $font-site
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
+
+.form-checkout__label
+  display: block
+  color: #222222
+  font-family: $font-site
+  font-size: 12px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+  margin-bottom: 18px
+  &__input
+    box-sizing: border-box
+    width: 100%
+    height: 45px
+    border: 1px solid #eaeaea
+    margin-top: 16px
+    padding: 0 10px
+    font-size: 16px
+  &__input:focus
+    border: 1px solid #4b93ff
+
+.flex-button
+  display: flex
+  align-items: center
+  margin-top: 32px
+
+.continue
+  @extend .clear-shopping-cart
+
+.forget
+  margin-left: 32px
+  color: #222222
+  font-family: $font-site
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  text-decoration: none
+  transition: all .5s
+  &:hover
+    transform: rotate(360deg)
+    text-decoration: underline
+    transition: all .5s
+
+.paragraph-margin-left
+  margin-left: 10px
